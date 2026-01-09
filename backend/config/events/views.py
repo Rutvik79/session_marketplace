@@ -9,7 +9,7 @@ from .models import Event
 from .serializers import EventSerializer
 # Create your views here.
 
-@api_view(['GET'])
+@api_view(['GET', 'POST'])
 @permission_classes([AllowAny])
 def event_list(request):
     # Public list
